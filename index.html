@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YTC — YouTube Transcript & AI Summary</title>
+  <meta name="description" content="YTC is a Chrome extension that lets you grab YouTube transcripts and generate clean AI summaries. Paid summaries are processed via Stripe." />
+  <style>
+    :root { --bg:#0b0d12; --card:#12161d; --muted:#a7b1c2; --text:#e8eef8; --accent:#4da3ff; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    .wrap{max-width:980px;margin:0 auto;padding:32px;}
+    .hero{padding:48px 0;text-align:center}
+    .badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#1a2533;color:#9fc3ff;font-weight:600;font-size:12px;letter-spacing:.3px}
+    h1{font-size:40px;line-height:1.1;margin:16px 0 10px}
+    p.lead{font-size:18px;color:var(--muted);margin:0 auto 18px;max-width:740px}
+    .cta{display:inline-block;background:var(--accent);color:#001b33;font-weight:700;padding:12px 18px;border-radius:12px;text-decoration:none}
+    .grid{display:grid;gap:18px;margin:36px 0}
+    @media(min-width:800px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid #1f2631;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .muted{color:var(--muted)}
+    footer{margin:40px 0 10px;text-align:center;color:#8d99ab;font-size:13px}
+    a.link{color:#9fc3ff}
+    .section h2{margin:8px 0 12px;font-size:22px}
+    .list{margin:0;padding-left:18px}
+    .tiny{font-size:12px;color:#93a0b3}
+    .divider{height:1px;background:#1f2631;margin:30px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <span class="badge">YTC Chrome Extension</span>
+      <h1>Grab transcripts. Get clear summaries. Save time.</h1>
+      <p class="lead">
+        YTC lets you copy full YouTube transcripts in one click and generate concise AI summaries via a Rails backend with Stripe payments.
+      </p>
+      <p>
+        <!-- Replace href when the extension is published -->
+        <a class="cta" href="https://chromewebstore.google.com/detail/ytc-copy-youtube-transcri/bodkfiaicfaoblnefjfmkdcbaijfeike?authuser=0&hl=en">Add to Chrome</a>
+      </p>
+      <p class="tiny">Status: Private beta.</p>
+    </header>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <h3>What it does</h3>
+          <p class="muted">Extract any video’s transcript and get a clean, skimmable summary with key ideas and optional timestamps.</p>
+        </div>
+        <div class="card">
+          <h3>How delivery works</h3>
+          <p class="muted">Digital product. The extension runs in your browser. Paid summaries are processed instantly and displayed in the UI.</p>
+        </div>
+        <div class="card">
+          <h3>Who it's for</h3>
+          <p class="muted">Researchers, students, founders — anyone who wants the signal without watching the whole video.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Pricing</h2>
+      <div class="card">
+        <p class="muted">
+          Free transcript copy. Paid AI summaries via Stripe.<br>
+          Current plan: <strong>$5/month for 20 summaries</strong> (subject to change during beta).
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p class="muted">
+        Email: <a class="link" href="mailto:dezmathio@gmail.com">dezmathio@gmail.com</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Policies</h2>
+      <div class="card">
+        <ul class="list">
+          <li><strong>Delivery</strong>: Digital, instant.</li>
+          <li><strong>Refunds</strong>: See refund policy in Terms.</li>
+          <li><strong>Terms</strong>: <a class="link" href="./terms.html">Read Terms</a></li>
+          <li><strong>Privacy</strong>: <a class="link" href="./privacy.html">Read Privacy Policy</a></li>
+        </ul>
+        <p class="tiny">Not affiliated with YouTube or Google.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y">2025</span> YTC. All rights reserved.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
